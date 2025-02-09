@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    margin: auto;
+    position: relative;
+    
+}
+.main-box::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    /* background-color: brown; */
+    position: absolute;
+    transition: 3s;
+}
+.main-box:hover::before{
+    content: '';
+   width: 100%;
+    height: 100%;
+    background-color: chocolate;
+    
+    position: absolute;
+}
